@@ -12,10 +12,14 @@
             "UpstreamPathTemplate": "/todos/{id}",
             "UpstreamHttpMethod": [
                 "Get"
-            ]
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "YWRtaW46YWRtaW4=",
+                "AllowedScopes": []
+            }
         }
     ],
     "GlobalConfiguration": {
-        "BaseUrl": "https://localhost:5000"
+        "BaseUrl": "http://localhost:5000"
     }
 }
