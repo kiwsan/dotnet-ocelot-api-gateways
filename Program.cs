@@ -31,3 +31,5 @@ namespace OcelotApiGateways
 
     }
 }
+
+// https://ocelot.readthedocs.io/en/latest/introduction/bigpicture.html
