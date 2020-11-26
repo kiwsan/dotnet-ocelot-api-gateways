@@ -1,0 +1,21 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+version: "3.7"
+
+services:
+  api.gateway:
+    container_name: services_apigateways
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5000"
+    restart: unless-stopped
+
+  file.service.api:
+    container_name: services_file
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5000"
+    restart: unless-stopped

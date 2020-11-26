@@ -1,0 +1,25 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/v1/file/upload",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "file.service.api",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/file/upload",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "YWRtaW46YWRtaW4=",
+                "AllowedScopes": []
+            }
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://api.local"
+    }
+}
