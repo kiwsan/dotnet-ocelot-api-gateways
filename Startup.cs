@@ -39,6 +39,12 @@ namespace OcelotApiGateways
                 app.UseDeveloperExceptionPage();
             }
 
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Developed-By", "kiwsan, inc.");
+                await next.Invoke();
+            });
+
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
